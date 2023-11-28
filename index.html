@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notify</title>
-    <link rel="icon" type="image/x-icon" href="./img/icons/documenticon.png">
+    <link rel="icon" type="image/x-icon" href="./img/icons/documenticon.png" />
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./img/icons/documenticon.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Notify
+        </a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <section class="mainContent">
+      <div class="sidebar">
+        <img src="./img/icons/trash.png" alt="trashcan" class="sidebarIcons" />
+        <img src="./img/icons/gear.png" alt="settings" class="sidebarIcons" />
+      </div>
+      <div class="notesContainer">
+        <div class="card">
+          <div class="card-body">This is some text within a card body.</div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

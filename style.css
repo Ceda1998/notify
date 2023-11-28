@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+}
+
+.mainContent {
+    display: flex;
+}
+
+.sidebar {
+    position: sticky;
+    width: 120px;
+    background-color: #2B3035;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebarIcons {
+    height: 54px;
+    margin-top: 50px;
+}
+
+.sidebarIcons:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.notesContainer {
+    width: 80%;
+}
