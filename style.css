@@ -27,5 +27,15 @@ body {
 }
 
 .notesContainer {
-    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 20px;
+    width: 100vh;
+}
+
+.buttonSave {
+    display: flex;
+    justify-content: center;
 }
