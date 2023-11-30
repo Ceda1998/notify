@@ -30,12 +30,49 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
     margin-top: 20px;
     width: 100vh;
 }
 
-.buttonSave {
+.fillInNoteContainer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 14px;
+    width: 500px;
+    height: 300px;
+}
+
+textarea {
+    width: 75%;
+    height: 200px;
+    resize: none;
+    overflow: auto;
+}
+
+input {
+    width: 75%;
+}
+
+#finishedNote {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finishedNotesContainer {
+    padding-top: 100px;
+    padding-left: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }

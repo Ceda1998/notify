@@ -12,7 +12,7 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
   </head>
-  <body>
+  <body onload="init()">
     <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -42,26 +42,29 @@
         <img src="./img/icons/trash.png" alt="trashcan" class="sidebarIcons" />
         <img src="./img/icons/gear.png" alt="settings" class="sidebarIcons" />
       </div>
+
       <div class="notesContainer" id="staticNote">
-        <div class="card w-50 p-3">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Title</label>
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Title">
+        <form class="fillInNoteContainer" id="NoteForm" onsubmit="saveNote();return false">
+          <input type="text" required placeholder="Your Title" id="noteTitle"/>
+          <textarea
+            name=""
+            id="NoteText"
+            maxlength="300"
+            required
+            placeholder="Your Note"
+          ></textarea>
+          <div class="saveButtonContainer">
+            <button type="submit" class="btn btn-dark">Save</button>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Note</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <div class="buttonSave">
-            <button type="button" class="btn btn-dark">Save</button>
-          </div>
+        </form>
+        <div class="finishedNotesContainer">
+
+          <div id="finishedNote">
+            
         </div>
-        <div class="newNotesContainer">
-          <div class="card" id="newNote">
-            <div class="card-body">This is some text within a card body.</div>
-          </div>
+
         </div>
-      </div>
+        
     </section>
   </body>
 </html>
