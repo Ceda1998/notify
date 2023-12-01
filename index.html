@@ -38,8 +38,15 @@
     </nav>
 
     <section class="mainContent">
+
+      <div id="trascan" style="display: none;">
+        <div class="trashCanHeader">
+          <h1>Your deleted Notes</h1>
+          <h1 class="closingTag" onclick="toggleTrashCan()">X</h1>
+        </div>
+      </div>
       <div class="sidebar">
-        <img src="./img/icons/trash.png" alt="trashcan" class="sidebarIcons" />
+        <img src="./img/icons/trash.png" alt="trashcan" class="sidebarIcons" id="trashCanIcon" onclick="toggleTrashCan()" />
         <img src="./img/icons/gear.png" alt="settings" class="sidebarIcons" />
       </div>
 

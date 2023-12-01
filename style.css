@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    overflow: auto;
 }
 
 .mainContent {
@@ -93,6 +94,27 @@ input {
 }
 
 .smallTrashIcon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* trashcan */
+
+#trascan {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: lightgrey;
+}
+
+.trashCanHeader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.closingTag:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
